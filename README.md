@@ -17,7 +17,7 @@ Um die SenseBox zu testen muss die SenseBox erst aufgebaut, das Script installie
 ### Aufbau
 Sie benötigen die SenseBox und ein Mini-USB Kabel.
 
-<div style="display: flex;">
+<div style="display: flex; height: 100px;">
     <img src="./Bilder/sensebox_mcu.png" alt="SenseBox-Board"></img>
     <img src="./Bilder/USB_cable.png" alt="Mini USB-Kabel"> </img>
 </div>
