@@ -15,12 +15,11 @@ Mit dem einfachen SenseBox Testprogramm werden aktuell folgende Bauteile und Fun
 Um die SenseBox zu testen muss die SenseBox erst aufgebaut, das Script installiert und dann die Tests der Funktionen geprüft werden.
 
 ### Aufbau
-Sie benötigen die SenseBox und ein Mini-USB Kabel.
+Sie benötigen die SenseBox, ein Mini-USB Kabel und ein Computer.
 
-<div style="display: flex; height: 100px;">
-    <img src="./Bilder/sensebox_mcu.png" alt="SenseBox-Board"></img>
-    <img src="./Bilder/USB_cable.png" alt="Mini USB-Kabel"> </img>
-</div>
+|                SenseBox-Board                |              Mini USB-Kabel               |
+| :------------------------------------------: | :---------------------------------------: |
+| ![SenseBox-Board](./Bilder/sensebox_mcu.png) | ![Mini USB-Kabel](./Bilder/USB_cable.png) |
 
 #### Sensoren
 Zum Anschluss der Sensoren verwenden wir ausschließlich die Kabel mit Stecker.
