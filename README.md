@@ -1,6 +1,13 @@
 # SenseBox Testscript
 Ein Testprogramm für alle Funktionen des SenseBox Edu Kits
 
+## Download
+
+| SenseBox Programm | Blockly Code | .ino Code |
+| :---------------: | :----------: | :-------: |
+| [Download](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.bin) | [Download](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.xml) | [](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.ino)
+| Zum direkt auf die SenseBox laden | Selbst weiter programmieren | Weiterprogrammieren für Experten |
+
 ## Ziel
 Nach einem Programmierkurs mit der SenseBox müssen alle Bauteile nach Vollständigkeit und Funktionalität überprüft werden.
 Mit dem einfachen SenseBox Testprogramm werden aktuell folgende Bauteile und Funktionen getestet ohne, dass Sie ein eigenes komplexes Skript schreiben müssen:
@@ -69,7 +76,7 @@ Das gelbe und rote Kabel ist ungenutzt und kann ignoriert werden.
 Später werden wir die LED im Betrieb einfach rausnehmen und durch eine andere ersetzen, um alle zu testen.
 
 ### Vollständiger Aufbau
-
+(Bild von ganzer Schaltung)
 
 ## Installation
 Nachdem die SenseBox vollständig aufgebaut und mit dem PC verbunden wurde muss das Testprogramm übertragen werden.
@@ -93,6 +100,10 @@ Zur wirklichen Funktionalität müssen Sie aktiv werden und eine manuelle Überp
 ### Display
 
 Das Display sollte nach einem kurzen Ladebildschirm ein netten Smiley mit der Aufschrift "TestScript" anzeigen. 
+
+| Display Startseite |
+| :----------------: |
+| [Display-Startseite]() |
 
 ### Button
 
@@ -131,9 +142,11 @@ Zur Orientierung sind einige Schätzwerte zum Vergleich gegeben. Diese sollten n
     - in Ruhe: ~9,81 (Schwerkraft g)
     - beim Schütteln: --
 
-#### Alle Seiten
+#### Alle Sensorseiten
 
-(Tabelle mit Bildern aller Seiten)
+| HDC1080 | BMP280 | VEML-TSL | Accelerometer |
+| :-----: | :----: | :------: | :-----------: |
+| [HDC1080-Seite]() | [BMP280-Seite]() | [VEML-TSL-Seite]() | [Accelerometer-Seite]() |
 
 ### LEDs
 
@@ -141,3 +154,16 @@ Die onBoard LEDs sollten bereits grün leuchten.
 
 Die aufgebaute LED sollte kontinuierlich leuchten. Nachdem die LED leuchtet ist sie funktionsfähig und kann entsprechend nach []() mit der nächsten ausgetauscht werden, um weitere zu testen.  
 Falls Sie unsicher sind, ob sie die LED richtig angeschlossen haben, drehen Sie sie um. Sie sollte in nur einer Richtung leuchten!
+
+## Geplante weitere Tests
+
+Geplant sind aktuell noch:
+- RGB-LED
+
+## Mitmachen
+
+Falls Sie Vorschläge zu weiteren Funktionen oder Komponententests haben oder bei Ihnen Probleme aufgetaucht sind, erstellen Sie gerne ein neues [Issue](https://github.com/GeneralMine/SenseBox-TestScript/issues).  
+Oder Sie entwickeln selbst weiter und erstellen einen [Pull-Request](https://github.com/GeneralMine/SenseBox-TestScript/pulls).
+
+## Danke
+an [Diana Burkart](https://github.com/DianaInfo) fürs Testen, paar Bildern und wichtiger Inspiration :)
