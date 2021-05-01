@@ -10,7 +10,6 @@ int i;
 Adafruit_SSD1306 display(OLED_RESET);
 Button button_0(0);
 BMP280 bmp_sensor;
-HDC1080 hdc;
 Lightsensor lightsensor;
 VEML6070 veml;
 BMX055 bmx;
@@ -53,7 +52,6 @@ display.clearDisplay();
   pinMode(1, OUTPUT);
   button_0.begin();
   bmp_sensor.begin();
-  hdc.begin();
   lightsensor.begin();
   veml.begin();
   bmx.beginAcc(0x3);
@@ -71,26 +69,6 @@ if (button_0.wasPressed()) {
   }
   switch (i) {
   case 0:
-       printOnDisplay("Luftdruck", String(bmp_sensor.getPressure()), "Pa", "Temperatur", String(bmp_sensor.getTemperature()), "°C");
-    display.display();
-
-  break;
-  case 1:
-       printOnDisplay("Temperatur", String(hdc.getTemperature()), "°C", "Luftfeuchtigkeit", String(hdc.getHumidity()), "%");
-    display.display();
-
-  break;
-  case 2:
-       printOnDisplay("Helligkeit", String(lightsensor.getIlluminance()), "Lux", "UV-Einstrahlung", String(veml.getUvIntensity()), "µW/cm²");
-    display.display();
-
-  break;
-  case 3:
-       printOnDisplay("Accelerometer X", String(bmx.getAccelerationX()), " N", "Accelerometer Total", String(bmx.getAccelerationTotal()), "N");
-    display.display();
-
-  break;
-  case 4:
       display.drawCircle(32,20,10,1);
       display.drawCircle(96,20,10,1);
       display.fillRect(49,40,30,2,1);
@@ -104,6 +82,21 @@ if (button_0.wasPressed()) {
       display.setTextSize(1);
       display.setTextColor(WHITE,BLACK);
       display.println("JuniorUni");
+    display.display();
+
+  break;
+  case 2:
+       printOnDisplay("Temperatur", String(bmp_sensor.getTemperature()), "°C", "Luftdruck", String(bmp_sensor.getPressure()), "Pa");
+    display.display();
+
+  break;
+  case 3:
+       printOnDisplay("Helligkeit", String(lightsensor.getIlluminance()), "Lux", "UV-Einstrahlung", String(veml.getUvIntensity()), "µW/cm²");
+    display.display();
+
+  break;
+  case 4:
+       printOnDisplay("Accelerometer X", String(bmx.getAccelerationX()), " N", "Accelerometer Total", String(bmx.getAccelerationTotal()), "N");
     display.display();
 
   break;

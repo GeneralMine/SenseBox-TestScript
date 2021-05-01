@@ -61,7 +61,7 @@
         </statement>
         <next>
           <block type="switch_case" id="E!hIV+fUiv!u#eeO~Etd">
-            <mutation case="4"></mutation>
+            <mutation case="3"></mutation>
             <value name="CONDITION">
               <block type="variables_get" id="uI7#?WLD[,?we)+,7DfK">
                 <field name="VAR">i</field>
@@ -73,182 +73,6 @@
               </block>
             </value>
             <statement name="CASE0">
-              <block type="sensebox_display_show" id="ao}=t]R*S[OAX_Jm%9tS">
-                <statement name="SHOW">
-                  <block type="sensebox_display_fastPrint" id="l^Y/vDJIX0][UCe?CAy=">
-                    <value name="Title1">
-                      <block type="text" id="^32jTnxgkz=H)o2SSR{g">
-                        <field name="TEXT">Luftdruck</field>
-                      </block>
-                    </value>
-                    <value name="Value1">
-                      <block type="sensebox_sensor_pressure" id=")Bg3JfD+T@Jxr~#vr*-k">
-                        <mutation name="Pressure"></mutation>
-                        <field name="NAME">Pressure</field>
-                      </block>
-                    </value>
-                    <value name="Dimension1">
-                      <block type="text" id="p[6O^mes77#@7rvuw`SK">
-                        <field name="TEXT">Pa</field>
-                      </block>
-                    </value>
-                    <value name="Title2">
-                      <block type="text" id="vhkT0I}rLJ{{[8z[#NF6">
-                        <field name="TEXT">Temperatur</field>
-                      </block>
-                    </value>
-                    <value name="Value2">
-                      <block type="sensebox_sensor_pressure" id="0V+Yr7dUfjX-PSZSWXqY">
-                        <mutation name="Temperature"></mutation>
-                        <field name="NAME">Temperature</field>
-                      </block>
-                    </value>
-                    <value name="Dimension2">
-                      <block type="text" id="nw~;wDd_;FOO];YHa_8k">
-                        <field name="TEXT">°C</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-            <value name="CASECONDITION1">
-              <block type="math_number" id="P#T~cNOceNHd|OxATV*b">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <statement name="CASE1">
-              <block type="sensebox_display_show" id="v8JTkyl1+KnrnbSUs{?g">
-                <statement name="SHOW">
-                  <block type="sensebox_display_fastPrint" id="Lj~=E:/O=zr_j2H@Zyv`">
-                    <value name="Title1">
-                      <block type="text" id="~Q`Yu;j=1tl*zce5,]6O">
-                        <field name="TEXT">Temperatur</field>
-                      </block>
-                    </value>
-                    <value name="Value1">
-                      <block type="sensebox_sensor_temp_hum" id="kZpY|`1m4.ATVs;u;Dt~">
-                        <field name="NAME">Temperature</field>
-                      </block>
-                    </value>
-                    <value name="Dimension1">
-                      <block type="text" id="@TyW)A![ye,wo(735R.K">
-                        <field name="TEXT">°C</field>
-                      </block>
-                    </value>
-                    <value name="Title2">
-                      <block type="text" id="1IpL~R/%s4k,x[*onSIJ">
-                        <field name="TEXT">Luftfeuchtigkeit</field>
-                      </block>
-                    </value>
-                    <value name="Value2">
-                      <block type="sensebox_sensor_temp_hum" id=".:d9N:(#n(VVF(O{Cx#k">
-                        <field name="NAME">Humidity</field>
-                      </block>
-                    </value>
-                    <value name="Dimension2">
-                      <block type="text" id="VP`hfUi;+RWwed=]pbEH">
-                        <field name="TEXT">%</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-            <value name="CASECONDITION2">
-              <block type="math_number" id="^XyRvK5sr.I(FO*Co!^R">
-                <field name="NUM">2</field>
-              </block>
-            </value>
-            <statement name="CASE2">
-              <block type="sensebox_display_show" id="RHVTrj=jXgbw].V~|}9g">
-                <statement name="SHOW">
-                  <block type="sensebox_display_fastPrint" id="G8u[q@ZaOt|#Mkj!,IK4">
-                    <value name="Title1">
-                      <block type="text" id="LxW^y7KJ{IJ?p*jA1c{@">
-                        <field name="TEXT">Helligkeit</field>
-                      </block>
-                    </value>
-                    <value name="Value1">
-                      <block type="sensebox_sensor_uv_light" id="|QFXi*kEA1w}^=c]FZE;">
-                        <field name="NAME">Illuminance</field>
-                      </block>
-                    </value>
-                    <value name="Dimension1">
-                      <block type="text" id="Ih+x23Z[`,OF%4zJ_]sz">
-                        <field name="TEXT">Lux</field>
-                      </block>
-                    </value>
-                    <value name="Title2">
-                      <block type="text" id="16,O%[rgEt*br%@}ziIv">
-                        <field name="TEXT">UV-Einstrahlung</field>
-                      </block>
-                    </value>
-                    <value name="Value2">
-                      <block type="sensebox_sensor_uv_light" id="3oxZNM(0:}]tUq!3py^Z">
-                        <field name="NAME">UvIntensity</field>
-                      </block>
-                    </value>
-                    <value name="Dimension2">
-                      <block type="text" id="m;}ahP!w3{2EAS`jYjl4">
-                        <field name="TEXT">µW/cm²</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-            <value name="CASECONDITION3">
-              <block type="math_number" id="toq;Jz),3AQBrD`)c1YE">
-                <field name="NUM">3</field>
-              </block>
-            </value>
-            <statement name="CASE3">
-              <block type="sensebox_display_show" id="OgKiqsooDwmf;srEU1h)">
-                <statement name="SHOW">
-                  <block type="sensebox_display_fastPrint" id="]voWNE}h/Ke6/%J,H!4+">
-                    <value name="Title1">
-                      <block type="text" id="CIIF*Vy8*U2:bq#:c/VO">
-                        <field name="TEXT">Accelerometer X</field>
-                      </block>
-                    </value>
-                    <value name="Value1">
-                      <block type="sensebox_sensor_bmx055_accelerometer" id="TPDFaLA4rV:Gk%g:we5m">
-                        <field name="VALUE">X</field>
-                        <field name="RANGE">0x3</field>
-                      </block>
-                    </value>
-                    <value name="Dimension1">
-                      <block type="text" id=":)+Fte0xd-kazZ^39ryr">
-                        <field name="TEXT"> N</field>
-                      </block>
-                    </value>
-                    <value name="Title2">
-                      <block type="text" id="XDafR]LPdykhSbtF#M{M">
-                        <field name="TEXT">Accelerometer Total</field>
-                      </block>
-                    </value>
-                    <value name="Value2">
-                      <block type="sensebox_sensor_bmx055_accelerometer" id="v9w=unk6Q}IBLjccK2}1">
-                        <field name="VALUE">Total</field>
-                        <field name="RANGE">0x3</field>
-                      </block>
-                    </value>
-                    <value name="Dimension2">
-                      <block type="text" id="+f*3IBD3F89Bb*.S?Lii">
-                        <field name="TEXT">N</field>
-                      </block>
-                    </value>
-                  </block>
-                </statement>
-              </block>
-            </statement>
-            <value name="CASECONDITION4">
-              <block type="math_number" id="|Vzp8AETzdRIw+_/ENHu">
-                <field name="NUM">4</field>
-              </block>
-            </value>
-            <statement name="CASE4">
               <block type="sensebox_display_show" id="+hqQIpf)FH14)YjVy0_C">
                 <statement name="SHOW">
                   <block type="sensebox_display_fillCircle" id="_oe]h`}9RXK3by/^Dut1">
@@ -488,6 +312,207 @@
                         </next>
                       </block>
                     </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION0">
+              <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="CASE0">
+              <block type="sensebox_display_show" id="v8JTkyl1+KnrnbSUs{?g">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="Lj~=E:/O=zr_j2H@Zyv`">
+                    <value name="Title1">
+                      <block type="text" id="~Q`Yu;j=1tl*zce5,]6O">
+                        <field name="TEXT">Temperatur</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_temp_hum" id="kZpY|`1m4.ATVs;u;Dt~">
+                        <field name="NAME">Temperature</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="@TyW)A![ye,wo(735R.K">
+                        <field name="TEXT">°C</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="1IpL~R/%s4k,x[*onSIJ">
+                        <field name="TEXT">Luftfeuchtigkeit</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_temp_hum" id=".:d9N:(#n(VVF(O{Cx#k">
+                        <field name="NAME">Humidity</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="VP`hfUi;+RWwed=]pbEH">
+                        <field name="TEXT">%</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="sensebox_display_printDisplay" id="c9T:Elr`M0kJZiNhZf?X">
+                        <field name="COLOR">WHITE,BLACK</field>
+                        <value name="SIZE">
+                          <block type="math_number" id="5=e-/GJGsM%-ab0pWt3q">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="X">
+                          <block type="math_number" id="#qW%.lcuxUfr!HtzX[n^">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="Y">
+                          <block type="math_number" id="o3SRA~s!v*Tynrv420/i">
+                            <field name="NUM">55</field>
+                          </block>
+                        </value>
+                        <value name="printDisplay">
+                          <block type="text" id="lQCg/d_iem~|2Deoc1j_">
+                            <field name="TEXT">HDC1080</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION1">
+              <block type="math_number" id="P#T~cNOceNHd|OxATV*b">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <statement name="CASE1">
+              <block type="sensebox_display_show" id="ao}=t]R*S[OAX_Jm%9tS">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="l^Y/vDJIX0][UCe?CAy=">
+                    <value name="Title1">
+                      <block type="text" id="^32jTnxgkz=H)o2SSR{g">
+                        <field name="TEXT">Temperatur</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_pressure" id=")Bg3JfD+T@Jxr~#vr*-k">
+                        <mutation name="Temperature"></mutation>
+                        <field name="NAME">Temperature</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="nw~;wDd_;FOO];YHa_8k">
+                        <field name="TEXT">°C</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="vhkT0I}rLJ{{[8z[#NF6">
+                        <field name="TEXT">Luftdruck</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_pressure" id="0V+Yr7dUfjX-PSZSWXqY">
+                        <mutation name="Pressure"></mutation>
+                        <field name="NAME">Pressure</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="p[6O^mes77#@7rvuw`SK">
+                        <field name="TEXT">Pa</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION2">
+              <block type="math_number" id="toq;Jz),3AQBrD`)c1YE">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+            <statement name="CASE2">
+              <block type="sensebox_display_show" id="RHVTrj=jXgbw].V~|}9g">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="G8u[q@ZaOt|#Mkj!,IK4">
+                    <value name="Title1">
+                      <block type="text" id="LxW^y7KJ{IJ?p*jA1c{@">
+                        <field name="TEXT">Helligkeit</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_uv_light" id="|QFXi*kEA1w}^=c]FZE;">
+                        <field name="NAME">Illuminance</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="Ih+x23Z[`,OF%4zJ_]sz">
+                        <field name="TEXT">Lux</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="16,O%[rgEt*br%@}ziIv">
+                        <field name="TEXT">UV-Einstrahlung</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_uv_light" id="3oxZNM(0:}]tUq!3py^Z">
+                        <field name="NAME">UvIntensity</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="m;}ahP!w3{2EAS`jYjl4">
+                        <field name="TEXT">µW/cm²</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION3">
+              <block type="math_number" id="|Vzp8AETzdRIw+_/ENHu">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <statement name="CASE3">
+              <block type="sensebox_display_show" id="OgKiqsooDwmf;srEU1h)">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="]voWNE}h/Ke6/%J,H!4+">
+                    <value name="Title1">
+                      <block type="text" id="CIIF*Vy8*U2:bq#:c/VO">
+                        <field name="TEXT">Accelerometer X</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_bmx055_accelerometer" id="TPDFaLA4rV:Gk%g:we5m">
+                        <field name="VALUE">X</field>
+                        <field name="RANGE">0x3</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id=":)+Fte0xd-kazZ^39ryr">
+                        <field name="TEXT"> N</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="XDafR]LPdykhSbtF#M{M">
+                        <field name="TEXT">Accelerometer Total</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_bmx055_accelerometer" id="v9w=unk6Q}IBLjccK2}1">
+                        <field name="VALUE">Total</field>
+                        <field name="RANGE">0x3</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="+f*3IBD3F89Bb*.S?Lii">
+                        <field name="TEXT">N</field>
+                      </block>
+                    </value>
                   </block>
                 </statement>
               </block>
