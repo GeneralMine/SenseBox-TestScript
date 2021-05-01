@@ -47,40 +47,41 @@ Es werden folgende Bauteile getestet:
 ### SenseBox
 Sie benötigen die SenseBox, ein Mini-USB Kabel und ein Computer.
 
-|                     SenseBox-Board                      |              Mini USB-Kabel               |
-|:-------------------------------------------------------:|:-----------------------------------------:|
-| ![SenseBox-Board](./Bilder/sensebox_mcu_breadboard.png) | ![Mini USB-Kabel](./Bilder/USB_cable.png) |
+|                    SenseBox-Board                     |                   Mini USB-Kabel                   |
+|:-----------------------------------------------------:|:--------------------------------------------------:|
+| ![SenseBox-Board](./Bilder/Bauteile/sensebox_mcu.jpg) | ![Mini USB-Kabel](./Bilder/Bauteile/usb_kabel.jpg) |
 
 ### Sensoren & Display
 Zum Anschluss der Sensoren verwenden wir ausschließlich die Kabel mit doppeltem Stecker.
 Wir brauchen folgende Teile:
-|             Stecker              |             HDC1080              |             BMP280             |              VEML+TSL              |                OLED-Display                |
-|:--------------------------------:|:--------------------------------:|:------------------------------:|:----------------------------------:|:------------------------------------------:|
-| ![Stecker](./Bilder/stecker.png) | ![HDC1080](./Bilder/hdc1080.png) | ![BMP280](./Bilder/bmp280.png) | ![VEML+TSL](./Bilder/veml_tsl.png) | ![OLED-Display](./Bilder/oled_display.png) |
+|                     Stecker                     |                            HDC1080                            |                            BMP280                            |                    VEML+TSL                     |                    OLED-Display                     |
+|:-----------------------------------------------:|:-------------------------------------------------------------:|:------------------------------------------------------------:|:-----------------------------------------------:|:---------------------------------------------------:|
+| ![Stecker](./Bilder/Bauteile/stecker_kabel.jpg) | ![HDC1080](./Bilder/Bauteile/sensor_temperature_humidity.jpg) | ![BMP280](./Bilder/Bauteile/sensor_temperature_pressure.jpg) | ![VEML+TSL](./Bilder/Bauteile/sensor_light.jpg) | ![OLED-Display](./Bilder/Bauteile/oled-display.jpg) |
 
 Alle Sensoren müssen an ein I2C Port angeschlossen werden. Es gibt 5 solcher Ports, die Reihenfolge und welcher verwendet wird spielt keine Rolle.
 
-|                Schema für ein Sensoren                |       Alle Sensoren angeschlossen       |
-|:-----------------------------------------------------:|:---------------------------------------:|
-| ![Schema für ein Sensor](./Bilder/sensor_example.png) | ![Alle Sensoren](./Bilder/sensoren.png) |
+|                 Alle Sensoren angeschlossen von oben                  |                  Alle Sensoren angeschlossen von der Seite                  |
+|:---------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| ![Alle Sensoren von oben](./Bilder/Aufbau/sensebox_sensoren_oben.jpg) | ![Alle Sensoren von der Seite](./Bilder/Aufbau/sensebox_sensoren_seite.jpg) |
 
 ### LED
 Zur Einfachheit schließen wir lediglich eine einzelne LED an, testen aber alle LEDs **nacheinander** durch austauschen.
 
 **Bauteile:**
-|         Stecker zu Pins         |                         LEDs                         |         Widerstand (Gelb-Lila-Braun-Gold)         |
-|:-------------------------------:|:----------------------------------------------------:|:-------------------------------------------------:|
-| ![](./Bilder/stecker_kabel.png) | ![Schema zum Anschluss einer LED](./Bilder/leds.png) | ![So siehts in echt aus](./Bilder/widerstand.png) |
-Wichtig! Beim Widerstand muss der Farbcode stimmen! Er ist Gelb-Lila-Braun-Gold
+|                Stecker zu Pins                |                             LEDs                              |                         Widerstand                         |
+|:---------------------------------------------:|:-------------------------------------------------------------:|:----------------------------------------------------------:|
+|                                               |                       beliebige Farben                        |                   (Gelb-Lila-Braun-Gold)                   |
+| ![](./Bilder/Bauteile/stecker_kabel_pins.jpg) | ![Schema zum Anschluss einer LED](./Bilder/Bauteile/leds.jpg) | ![So siehts in echt aus](./Bilder/Bauteile/widerstand.jpg) |
 
 **Anschluss**
-|                            Schema                             |                            Realität                            |
-|:-------------------------------------------------------------:|:--------------------------------------------------------------:|
-| ![Schema zum Anschluss einer LED](./Bilder/led_anschluss.png) | ![So siehts in echt aus](./Bilder/led_anschluss_realitaet.png) |
-Das lange Beinchen der LED ist hier mit einem kleinen Knick illustriert.
+|                            Anschluss am Breadboard                             |                      Anschluss an SenseBox                      |
+|:------------------------------------------------------------------------------:|:---------------------------------------------------------------:|
+| ![Schema zum Anschluss einer LED](./Bilder/Aufbau/sensebox_led_breadboard.jpg) | ![So siehts in echt aus](./Bilder/Aufbau/sensebox_led_oben.jpg) |
+|    Kurzes Beinchen der LED in E3 und langes in D4, Widerstand in C4 und C8     | Stecker in Digital A, Schwarzes Kabel an A3, Grünes Kabel an A8 |
+
 1. Stecker in SenseBox an **Port Digital A** (in Schriftrichtung ganz oben links) einstecken
 2. Schwarzes Kabel an A3 auf Steckbrett einstecken
-3. Eine LED mit dem kurzen Beinchen an E3 und mit dem langen Beinchen an E4 einstecken. (Am einfachsten gehts mit dem langen zuerst einstechen und dann mit dem kurzen nachziehen)
+3. Eine LED mit dem kurzen Beinchen an E3 und mit dem langen Beinchen an D4 einstecken. (Am einfachsten gehts mit dem langen zuerst einstechen und dann mit dem kurzen nachziehen)
 4. Körper des Widerstands mit zwei Fingern der selben Hand greifen und mit der anderen Hand runter biegen. Gleiches für die andere Seite, damit der Widerstand wie auf dem Bild oben aussieht.
 5. Widerstand in C4 und C8 stecken.
 6. Grünes Kabel in A8 stecken
@@ -91,7 +92,10 @@ Das gelbe und rote Kabel ist ungenutzt und kann ignoriert werden.
 Später werden wir die LED im Betrieb einfach rausnehmen und durch eine andere ersetzen, um alle zu testen.
 
 ### Vollständiger Aufbau
-(Bild von ganzer Schaltung)
+So sollte es am Ende aussehen:
+|                          Vollständiger Aufbau                          |
+|:----------------------------------------------------------------------:|
+| [Vollständiger Aufbau](./Bilder/Aufbau/sensebox_sensoren_led_oben.jpg) |
 
 ## Installation
 Nachdem die SenseBox vollständig aufgebaut und mit dem PC verbunden wurde muss das Testprogramm übertragen werden.
@@ -114,9 +118,9 @@ Zur wirklichen Funktionalität müssen Sie aktiv werden und eine manuelle Überp
 ### Display
 Das Display sollte nach einem kurzen Ladebildschirm ein netten Smiley mit der Aufschrift "TestScript" anzeigen. 
 
-|   Display Startseite   |
-|:----------------------:|
-| [Display-Startseite]() |
+|                           Display Startseite                           |
+|:----------------------------------------------------------------------:|
+| [Display-Startseite](./Bilder/Display/sensebox_display_startseite.jpg) |
 
 ### Button
 Nach dem Drücken des blauen onBoard Buttons sollte auf dem Display eine andere Seite angezeigt werden.
@@ -150,9 +154,9 @@ Zur Orientierung sind einige Schätzwerte zum Vergleich gegeben. Diese sollten n
     - beim Schütteln: --
 
 #### Alle Sensorseiten
-|      HDC1080      |      BMP280      |      VEML-TSL      |      Accelerometer      |
-|:-----------------:|:----------------:|:------------------:|:-----------------------:|
-| [HDC1080-Seite]() | [BMP280-Seite]() | [VEML-TSL-Seite]() | [Accelerometer-Seite]() |
+|                              HDC1080                              |                             BMP280                              |                              VEML-TSL                              |                               Accelerometer                                |
+|:-----------------------------------------------------------------:|:---------------------------------------------------------------:|:------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| [HDC1080-Seite](./Bilder/Display/sensebox_display_temperatur.jpg) | [BMP280-Seite](./Bilder/Display/sensebox_display_luftdruck.jpg) | [VEML-TSL-Seite](./Bilder/Display/sensebox_display_helligkeit.jpg) | [Accelerometer-Seite](./Bilder/Display/sensebox_display_accelerometer.jpg) |
 
 ### LEDs
 Die onBoard LEDs sollten bereits grün leuchten.
