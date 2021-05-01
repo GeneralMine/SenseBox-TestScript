@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="arduino_functions" id="5KebY,-ltvxB7K^El}1(" x="30" y="34">
+  <block type="arduino_functions" id="5KebY,-ltvxB7K^El}1(" x="164" y="74">
     <statement name="SETUP_FUNC">
       <block type="sensebox_display_beginDisplay" id="ua*vO@DiBmYrCo[G+lk}">
         <next>
@@ -68,7 +68,7 @@
               </block>
             </value>
             <value name="CASECONDITION0">
-              <block type="math_number" id="nekq;Iib}/UzjdDh:uwe">
+              <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+">
                 <field name="NUM">0</field>
               </block>
             </value>
@@ -317,7 +317,7 @@
               </block>
             </statement>
             <value name="CASECONDITION0">
-              <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+">
+              <block type="math_number" id="Ixj|}4oy8CMmPEXJ!L+!">
                 <field name="NUM">1</field>
               </block>
             </value>
@@ -524,5 +524,8 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="math_number" id="nekq;Iib}/UzjdDh:uwe" disabled="true" x="215" y="325">
+    <field name="NUM">0</field>
   </block>
 </xml>
