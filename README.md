@@ -2,15 +2,14 @@
 Ein Testprogramm für alle Funktionen des SenseBox Edu Kits
 
 ## Download
-
-| SenseBox Programm | Blockly Code | .ino Code |
-| :---------------: | :----------: | :-------: |
-| [Download testscript.bin](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.bin) | [Download testscript.xml](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.xml) | [Download testscript.ino](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.ino)
-| Zum direkt auf die SenseBox laden | Selbst weiter programmieren | Weiterprogrammieren für Experten |
+|                                           SenseBox Programm                                           |                                             Blockly Code                                              |                                               .ino Code                                               |
+|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|
+| [Download testscript.bin](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.bin) | [Download testscript.xml](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.xml) | [Download testscript.ino](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.ino) |
+|                                   Zum direkt auf die SenseBox laden                                   |                                      Selbst weiter programmieren                                      |                                   Weiterprogrammieren für Experten                                    |
 
 ## Ziel
-Nach einem Programmierkurs mit der SenseBox müssen alle Bauteile nach Vollständigkeit und Funktionalität überprüft werden.
-Mit dem einfachen SenseBox Testprogramm werden aktuell folgende Bauteile und Funktionen getestet ohne, dass Sie ein eigenes komplexes Skript schreiben müssen:
+Nach der Arbeit mit der SenseBox - z.B. im Rahmen eines Programmierkurses - müssen alle Bauteile auf Vollständigkeit und Funktionalität überprüft werden.
+Es werden folgende Bauteile getestet:
 - BMP280: Temperatur, Luftdruck
 - HDC1080: Temperatur, Luftfeuchtigkeit
 - VEML+TSL: Helligkeit, UV-Einstrahlung
@@ -19,48 +18,64 @@ Mit dem einfachen SenseBox Testprogramm werden aktuell folgende Bauteile und Fun
 - LEDs: onBoard, externe
 - Button: onBoard
 
-## Ablauf
-Um die SenseBox zu testen muss die SenseBox erst aufgebaut, das Script installiert und dann die Tests der Funktionen geprüft werden.
-
-- Aufbau
-- Installation
-- Testen
-
+## Inhalt
+- [SenseBox Testscript](#sensebox-testscript)
+  - [Download](#download)
+  - [Ziel](#ziel)
+  - [Inhalt](#inhalt)
+  - [Aufbau](#aufbau)
+    - [SenseBox](#sensebox)
+    - [Sensoren & Display](#sensoren--display)
+    - [LED](#led)
+    - [Vollständiger Aufbau](#vollständiger-aufbau)
+  - [Installation](#installation)
+  - [Tests](#tests)
+    - [Display](#display)
+    - [Button](#button)
+    - [Sensoren](#sensoren)
+      - [HDC1080: Temperatur & Luftfeuchtigkeit](#hdc1080-temperatur--luftfeuchtigkeit)
+      - [BMP280: Temperatur & Luftdruck](#bmp280-temperatur--luftdruck)
+      - [VEML-TSL: Helligkeit & UV-Einstrahlung](#veml-tsl-helligkeit--uv-einstrahlung)
+      - [Accelerometer: Beschleunigung](#accelerometer-beschleunigung)
+      - [Alle Sensorseiten](#alle-sensorseiten)
+    - [LEDs](#leds)
+  - [Geplante weitere Tests](#geplante-weitere-tests)
+  - [Mitwirken](#mitwirken)
+  - [Mitwirkende](#mitwirkende)
 
 ## Aufbau
-
 ### SenseBox
 Sie benötigen die SenseBox, ein Mini-USB Kabel und ein Computer.
 
 |                     SenseBox-Board                      |              Mini USB-Kabel               |
-| :-----------------------------------------------------: | :---------------------------------------: |
+|:-------------------------------------------------------:|:-----------------------------------------:|
 | ![SenseBox-Board](./Bilder/sensebox_mcu_breadboard.png) | ![Mini USB-Kabel](./Bilder/USB_cable.png) |
 
-### Sensoren und Display
+### Sensoren & Display
 Zum Anschluss der Sensoren verwenden wir ausschließlich die Kabel mit doppeltem Stecker.
 Wir brauchen folgende Teile:
 |             Stecker              |             HDC1080              |             BMP280             |              VEML+TSL              |                OLED-Display                |
-| :------------------------------: | :------------------------------: | :----------------------------: | :--------------------------------: | :----------------------------------------: |
+|:--------------------------------:|:--------------------------------:|:------------------------------:|:----------------------------------:|:------------------------------------------:|
 | ![Stecker](./Bilder/stecker.png) | ![HDC1080](./Bilder/hdc1080.png) | ![BMP280](./Bilder/bmp280.png) | ![VEML+TSL](./Bilder/veml_tsl.png) | ![OLED-Display](./Bilder/oled_display.png) |
 
 Alle Sensoren müssen an ein I2C Port angeschlossen werden. Es gibt 5 solcher Ports, die Reihenfolge und welcher verwendet wird spielt keine Rolle.
 
 |                Schema für ein Sensoren                |       Alle Sensoren angeschlossen       |
-| :---------------------------------------------------: | :-------------------------------------: |
+|:-----------------------------------------------------:|:---------------------------------------:|
 | ![Schema für ein Sensor](./Bilder/sensor_example.png) | ![Alle Sensoren](./Bilder/sensoren.png) |
 
-### LEDs
+### LED
 Zur Einfachheit schließen wir lediglich eine einzelne LED an, testen aber alle LEDs **nacheinander** durch austauschen.
 
 **Bauteile:**
 |         Stecker zu Pins         |                         LEDs                         |         Widerstand (Gelb-Lila-Braun-Gold)         |
-| :-----------------------------: | :--------------------------------------------------: | :-----------------------------------------------: |
+|:-------------------------------:|:----------------------------------------------------:|:-------------------------------------------------:|
 | ![](./Bilder/stecker_kabel.png) | ![Schema zum Anschluss einer LED](./Bilder/leds.png) | ![So siehts in echt aus](./Bilder/widerstand.png) |
 Wichtig! Beim Widerstand muss der Farbcode stimmen! Er ist Gelb-Lila-Braun-Gold
 
 **Anschluss**
 |                            Schema                             |                            Realität                            |
-| :-----------------------------------------------------------: | :------------------------------------------------------------: |
+|:-------------------------------------------------------------:|:--------------------------------------------------------------:|
 | ![Schema zum Anschluss einer LED](./Bilder/led_anschluss.png) | ![So siehts in echt aus](./Bilder/led_anschluss_realitaet.png) |
 Das lange Beinchen der LED ist hier mit einem kleinen Knick illustriert.
 1. Stecker in SenseBox an **Port Digital A** (in Schriftrichtung ganz oben links) einstecken
@@ -90,7 +105,6 @@ Kurz danach sollte sich die SenseBox **automatisch trennen und neustarten**.
 Die **Installation** ist damit **abgeschlossen**!
 
 ## Tests
-
 Die Tests selbst testen jeweils nur auf erfolgreiche Initialisierung aller Komponenten.  
 In diesem Fall leuchten **beide Status LEDs** neben dem Reset Button **grün**!
 
@@ -98,34 +112,28 @@ Zur wirklichen Funktionalität müssen Sie aktiv werden und eine manuelle Überp
 Überprüfen Sie, ob die Messwerte der Sensoren sinnvoll sind und LEDs tatsächlich leuchten und ihren Zweck erfüllen.
 
 ### Display
-
 Das Display sollte nach einem kurzen Ladebildschirm ein netten Smiley mit der Aufschrift "TestScript" anzeigen. 
 
-| Display Startseite |
-| :----------------: |
+|   Display Startseite   |
+|:----------------------:|
 | [Display-Startseite]() |
 
 ### Button
-
 Nach dem Drücken des blauen onBoard Buttons sollte auf dem Display eine andere Seite angezeigt werden.
 
 ### Sensoren
-
 Jeder Sensor hat eine eigene Seite auf dem Display die sie mit erneuter Betätigung des blauen onBoard Buttons durchklicken können.  
 Zur Orientierung sind einige Schätzwerte zum Vergleich gegeben. Diese sollten natürlich von Ihrer Umgebung abhängig sein!
 
-#### **HDC1080: Temperatur & Luftfeuchtigkeit**
-
+#### HDC1080: Temperatur & Luftfeuchtigkeit
 - Temperatur: ~20°C
 - Luftfeuchtigkeit: 30-50%
 
-#### **BMP280: Temperatur & Luftdruck**
-
+#### BMP280: Temperatur & Luftdruck
 - Temperatur: ~20°C
 - Luftdruck: --
 
-#### **VEML-TSL: Helligkeit & UV-Einstrahlung**
-
+#### VEML-TSL: Helligkeit & UV-Einstrahlung
 - Helligkeit
     - entfernt eines Fensters: 10-100
     - in Nähe eines Fensters: 100-1000
@@ -133,37 +141,32 @@ Zur Orientierung sind einige Schätzwerte zum Vergleich gegeben. Diese sollten n
     - entfernt eines Fensters: --
     - in Nähe eines Fensters
 
-#### **Accelerometer: Beschleunigung** 
-
+#### Accelerometer: Beschleunigung 
 - Beschleunigung X
     - in Ruhe: ~0
     - beim Schütteln: 0-10
 - Beschleunigung Insgesamt
-    - in Ruhe: ~9,81 (Schwerkraft g)
+    - in Ruhe: 9,6-9,9 (Schwerkraft)
     - beim Schütteln: --
 
 #### Alle Sensorseiten
-
-| HDC1080 | BMP280 | VEML-TSL | Accelerometer |
-| :-----: | :----: | :------: | :-----------: |
+|      HDC1080      |      BMP280      |      VEML-TSL      |      Accelerometer      |
+|:-----------------:|:----------------:|:------------------:|:-----------------------:|
 | [HDC1080-Seite]() | [BMP280-Seite]() | [VEML-TSL-Seite]() | [Accelerometer-Seite]() |
 
 ### LEDs
-
 Die onBoard LEDs sollten bereits grün leuchten.
 
 Die aufgebaute LED sollte kontinuierlich leuchten. Nachdem die LED leuchtet ist sie funktionsfähig und kann entsprechend nach []() mit der nächsten ausgetauscht werden, um weitere zu testen.  
 Falls Sie unsicher sind, ob sie die LED richtig angeschlossen haben, drehen Sie sie um. Sie sollte in nur einer Richtung leuchten!
 
 ## Geplante weitere Tests
-
 Geplant sind aktuell noch:
 - RGB-LED
 
-## Mitmachen
-
+## Mitwirken
 Falls Sie Vorschläge zu weiteren Funktionen oder Komponententests haben oder bei Ihnen Probleme aufgetaucht sind, erstellen Sie gerne ein neues [Issue](https://github.com/GeneralMine/SenseBox-TestScript/issues).  
 Oder Sie entwickeln selbst weiter und erstellen einen [Pull-Request](https://github.com/GeneralMine/SenseBox-TestScript/pulls).
 
-## Danke
-an [Diana Burkart](https://github.com/DianaInfo) fürs Testen, paar Bildern und wichtiger Inspiration :)
+## Mitwirkende
+Dankeschön an [Diana Burkart](https://github.com/DianaInfo) für die Hilfe beim Testen des Programms, die guten Bilder und wunderbarer Inspiration bei der Arbeit mit der Sensebox! :)
