@@ -1,0 +1,531 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="arduino_functions" id="5KebY,-ltvxB7K^El}1(" x="164" y="74">
+    <statement name="SETUP_FUNC">
+      <block type="sensebox_display_beginDisplay" id="ua*vO@DiBmYrCo[G+lk}">
+        <next>
+          <block type="sensebox_led" id="^htn{A[)C=yVE-m0a!(.">
+            <field name="PIN">7</field>
+            <field name="STAT">HIGH</field>
+            <next>
+              <block type="sensebox_led" id="w_i3%@10g.)8?;N[;tfE">
+                <field name="PIN">8</field>
+                <field name="STAT">HIGH</field>
+                <next>
+                  <block type="sensebox_led" id="uIyn?6z_v?/1fXV1H2DD">
+                    <field name="PIN">1</field>
+                    <field name="STAT">HIGH</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP_FUNC">
+      <block type="controls_if" id="2HY-W2@TJ9clGMZUN-6/">
+        <value name="IF0">
+          <block type="sensebox_button" id="ogJnGdR:MO(0~|M)Pmtd">
+            <field name="FUNCTION">wasPressed</field>
+            <field name="PIN">0</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="%.`Fn~Mx}:R]e=ALp#Oy">
+            <field name="VAR">i</field>
+            <value name="VALUE">
+              <block type="math_modulo" id="hPJ_NWZwMel*5ifZi)#5">
+                <value name="DIVIDEND">
+                  <block type="math_arithmetic" id=")q}V+LcDO!fOm!(9(ahF">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="variables_get" id="C_?w?hr^^-iQHU;On?cu">
+                        <field name="VAR">i</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="~l*`a+r3s^:6Qe-MT_h1">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="DIVISOR">
+                  <block type="math_number" id="*w^i52p7Q-#y{5MQ=Kk%">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="switch_case" id="E!hIV+fUiv!u#eeO~Etd">
+            <mutation case="3"></mutation>
+            <value name="CONDITION">
+              <block type="variables_get" id="uI7#?WLD[,?we)+,7DfK">
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <value name="CASECONDITION0">
+              <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <statement name="CASE0">
+              <block type="sensebox_display_show" id="+hqQIpf)FH14)YjVy0_C">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fillCircle" id="_oe]h`}9RXK3by/^Dut1">
+                    <field name="FILL">FALSE</field>
+                    <value name="X">
+                      <block type="math_number" id="#k~K@h?YH;iAQAYzIHY_">
+                        <field name="NUM">32</field>
+                      </block>
+                    </value>
+                    <value name="Y">
+                      <block type="math_number" id="r=9PAX~`|#Kj.I];VH*:">
+                        <field name="NUM">20</field>
+                      </block>
+                    </value>
+                    <value name="Radius">
+                      <block type="math_number" id="1uO.,K!Z/]EB^q:)_jE^">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="sensebox_display_fillCircle" id="}3[IqUIOPlO[DsfU=pbt">
+                        <field name="FILL">FALSE</field>
+                        <value name="X">
+                          <block type="math_number" id="j2~GkL1Nd[w#U%clLe0~">
+                            <field name="NUM">96</field>
+                          </block>
+                        </value>
+                        <value name="Y">
+                          <block type="math_number" id="u+r-GT6K[r;A[vlJ[^7%">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                        <value name="Radius">
+                          <block type="math_number" id="7l~F{{d}lFvr`%+L_3~)">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="sensebox_display_drawRectangle" id="16o?Nh!2Xj-kL2J#b)7b">
+                            <field name="FILL">TRUE</field>
+                            <value name="X">
+                              <block type="math_number" id="pR_d~0H6y~1!s55BaN_j">
+                                <field name="NUM">49</field>
+                              </block>
+                            </value>
+                            <value name="Y">
+                              <block type="math_number" id=":vr,t+o~UzUoYc~Jp4{:">
+                                <field name="NUM">40</field>
+                              </block>
+                            </value>
+                            <value name="width">
+                              <block type="math_number" id="6O-CDq}^9CyzXt`FtAuC">
+                                <field name="NUM">30</field>
+                              </block>
+                            </value>
+                            <value name="height">
+                              <block type="math_number" id="jp].NbU)u0%f]icvhnjn">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="sensebox_display_drawRectangle" id="[/Wtp?iecyvtYgB|:!6,">
+                                <field name="FILL">TRUE</field>
+                                <value name="X">
+                                  <block type="math_number" id="rFX0Oe?qbj}4Hxiuy:zg">
+                                    <field name="NUM">48</field>
+                                  </block>
+                                </value>
+                                <value name="Y">
+                                  <block type="math_number" id="^HP4k;[r4nYplp^)FGl]">
+                                    <field name="NUM">39</field>
+                                  </block>
+                                </value>
+                                <value name="width">
+                                  <block type="math_number" id="aAwSvPS~#i.M_c**xM*k">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <value name="height">
+                                  <block type="math_number" id="RZql6Q,96s8tFJ}sA?X4">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="sensebox_display_drawRectangle" id="*_t-h:VzJM7#`M92b)VK">
+                                    <field name="FILL">TRUE</field>
+                                    <value name="X">
+                                      <block type="math_number" id="YCvl#q_H!R!:53(+k_RX">
+                                        <field name="NUM">47</field>
+                                      </block>
+                                    </value>
+                                    <value name="Y">
+                                      <block type="math_number" id="gc)M304=U4C_k24iz^8n">
+                                        <field name="NUM">38</field>
+                                      </block>
+                                    </value>
+                                    <value name="width">
+                                      <block type="math_number" id="eL=-rvOV4Wu0rf/eYI.g">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <value name="height">
+                                      <block type="math_number" id="1k%x/C{u*RGjJLerXs%p">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="sensebox_display_drawRectangle" id="MwT5zy{-vlyHGfr2q!~G">
+                                        <field name="FILL">TRUE</field>
+                                        <value name="X">
+                                          <block type="math_number" id="4B,7`--y~mWjRM/R2SB3">
+                                            <field name="NUM">46</field>
+                                          </block>
+                                        </value>
+                                        <value name="Y">
+                                          <block type="math_number" id="5T@WA?#nF5K^jkJ/Dv1F">
+                                            <field name="NUM">37</field>
+                                          </block>
+                                        </value>
+                                        <value name="width">
+                                          <block type="math_number" id="?U%f%phA+b-stBh?/QB9">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <value name="height">
+                                          <block type="math_number" id="V^vJqp}+%SS{5kpBJQh|">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="sensebox_display_drawRectangle" id="Nxc4A8t0#9anr.TH(api">
+                                            <field name="FILL">TRUE</field>
+                                            <value name="X">
+                                              <block type="math_number" id="[8t0ZEg0g(?VlrDQtwi(">
+                                                <field name="NUM">79</field>
+                                              </block>
+                                            </value>
+                                            <value name="Y">
+                                              <block type="math_number" id="QaN1l?Gu:noj~4zAa*[l">
+                                                <field name="NUM">39</field>
+                                              </block>
+                                            </value>
+                                            <value name="width">
+                                              <block type="math_number" id=".BP:;zQie-d:?7I(5%~n">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="height">
+                                              <block type="math_number" id="R4lN.zy%l?Acm#h%lj]i">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="sensebox_display_drawRectangle" id="@jsF5!Z1Z`s]y%[P*)L{">
+                                                <field name="FILL">TRUE</field>
+                                                <value name="X">
+                                                  <block type="math_number" id="K1PvKGsmZHKzB2CL.P?:">
+                                                    <field name="NUM">80</field>
+                                                  </block>
+                                                </value>
+                                                <value name="Y">
+                                                  <block type="math_number" id="e6DXINL.;5/3g^8+k=G/">
+                                                    <field name="NUM">38</field>
+                                                  </block>
+                                                </value>
+                                                <value name="width">
+                                                  <block type="math_number" id="y^AOreAFu.~o,,X~-j#*">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="height">
+                                                  <block type="math_number" id="~X3D+!]:DqiaY#*C_%6J">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="sensebox_display_drawRectangle" id="M2j:t+4o%G+8?_+ilp4D">
+                                                    <field name="FILL">TRUE</field>
+                                                    <value name="X">
+                                                      <block type="math_number" id="3(`{1/3Dw:6q*/%IZ^sJ">
+                                                        <field name="NUM">81</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="Y">
+                                                      <block type="math_number" id="M5f{sa#-BNT4siE]!p[(">
+                                                        <field name="NUM">37</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="width">
+                                                      <block type="math_number" id="l?veR+`h,+9R/SRQ1D+h">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="height">
+                                                      <block type="math_number" id="Xmhm0y)Z7FI!Fkps!Qs{">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="sensebox_display_printDisplay" id="7c=|*`+=GZVu--JWW7wh">
+                                                        <field name="COLOR">WHITE,BLACK</field>
+                                                        <value name="SIZE">
+                                                          <block type="math_number" id="fMKns!5b6pcb-L!ofmY?">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="X">
+                                                          <block type="math_number" id="sEMvV;p]#E(~4z5A,bB7">
+                                                            <field name="NUM">38</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="Y">
+                                                          <block type="math_number" id="lR.V=:I{f%/?XjVBT~t!">
+                                                            <field name="NUM">50</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="printDisplay">
+                                                          <block type="text" id="^AP;1Ct}f9qrsyl*fX|N">
+                                                            <field name="TEXT">JuniorUni</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION0">
+              <block type="math_number" id="Ixj|}4oy8CMmPEXJ!L+!">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="CASE0">
+              <block type="sensebox_display_show" id="v8JTkyl1+KnrnbSUs{?g">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="Lj~=E:/O=zr_j2H@Zyv`">
+                    <value name="Title1">
+                      <block type="text" id="~Q`Yu;j=1tl*zce5,]6O">
+                        <field name="TEXT">Temperatur</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_temp_hum" id="kZpY|`1m4.ATVs;u;Dt~">
+                        <field name="NAME">Temperature</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="@TyW)A![ye,wo(735R.K">
+                        <field name="TEXT">°C</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="1IpL~R/%s4k,x[*onSIJ">
+                        <field name="TEXT">Luftfeuchtigkeit</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_temp_hum" id=".:d9N:(#n(VVF(O{Cx#k">
+                        <field name="NAME">Humidity</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="VP`hfUi;+RWwed=]pbEH">
+                        <field name="TEXT">%</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="sensebox_display_printDisplay" id="c9T:Elr`M0kJZiNhZf?X">
+                        <field name="COLOR">WHITE,BLACK</field>
+                        <value name="SIZE">
+                          <block type="math_number" id="5=e-/GJGsM%-ab0pWt3q">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="X">
+                          <block type="math_number" id="#qW%.lcuxUfr!HtzX[n^">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="Y">
+                          <block type="math_number" id="o3SRA~s!v*Tynrv420/i">
+                            <field name="NUM">55</field>
+                          </block>
+                        </value>
+                        <value name="printDisplay">
+                          <block type="text" id="lQCg/d_iem~|2Deoc1j_">
+                            <field name="TEXT">HDC1080</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION1">
+              <block type="math_number" id="P#T~cNOceNHd|OxATV*b">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <statement name="CASE1">
+              <block type="sensebox_display_show" id="ao}=t]R*S[OAX_Jm%9tS">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="l^Y/vDJIX0][UCe?CAy=">
+                    <value name="Title1">
+                      <block type="text" id="^32jTnxgkz=H)o2SSR{g">
+                        <field name="TEXT">Temperatur</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_pressure" id=")Bg3JfD+T@Jxr~#vr*-k">
+                        <mutation name="Temperature"></mutation>
+                        <field name="NAME">Temperature</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="nw~;wDd_;FOO];YHa_8k">
+                        <field name="TEXT">°C</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="vhkT0I}rLJ{{[8z[#NF6">
+                        <field name="TEXT">Luftdruck</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_pressure" id="0V+Yr7dUfjX-PSZSWXqY">
+                        <mutation name="Pressure"></mutation>
+                        <field name="NAME">Pressure</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="p[6O^mes77#@7rvuw`SK">
+                        <field name="TEXT">Pa</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION2">
+              <block type="math_number" id="toq;Jz),3AQBrD`)c1YE">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+            <statement name="CASE2">
+              <block type="sensebox_display_show" id="RHVTrj=jXgbw].V~|}9g">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="G8u[q@ZaOt|#Mkj!,IK4">
+                    <value name="Title1">
+                      <block type="text" id="LxW^y7KJ{IJ?p*jA1c{@">
+                        <field name="TEXT">Helligkeit</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_uv_light" id="|QFXi*kEA1w}^=c]FZE;">
+                        <field name="NAME">Illuminance</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id="Ih+x23Z[`,OF%4zJ_]sz">
+                        <field name="TEXT">Lux</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="16,O%[rgEt*br%@}ziIv">
+                        <field name="TEXT">UV-Einstrahlung</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_uv_light" id="3oxZNM(0:}]tUq!3py^Z">
+                        <field name="NAME">UvIntensity</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="m;}ahP!w3{2EAS`jYjl4">
+                        <field name="TEXT">µW/cm²</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <value name="CASECONDITION3">
+              <block type="math_number" id="|Vzp8AETzdRIw+_/ENHu">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <statement name="CASE3">
+              <block type="sensebox_display_show" id="OgKiqsooDwmf;srEU1h)">
+                <statement name="SHOW">
+                  <block type="sensebox_display_fastPrint" id="]voWNE}h/Ke6/%J,H!4+">
+                    <value name="Title1">
+                      <block type="text" id="CIIF*Vy8*U2:bq#:c/VO">
+                        <field name="TEXT">Accelerometer X</field>
+                      </block>
+                    </value>
+                    <value name="Value1">
+                      <block type="sensebox_sensor_bmx055_accelerometer" id="TPDFaLA4rV:Gk%g:we5m">
+                        <field name="VALUE">X</field>
+                        <field name="RANGE">0x3</field>
+                      </block>
+                    </value>
+                    <value name="Dimension1">
+                      <block type="text" id=":)+Fte0xd-kazZ^39ryr">
+                        <field name="TEXT"> N</field>
+                      </block>
+                    </value>
+                    <value name="Title2">
+                      <block type="text" id="XDafR]LPdykhSbtF#M{M">
+                        <field name="TEXT">Accelerometer Total</field>
+                      </block>
+                    </value>
+                    <value name="Value2">
+                      <block type="sensebox_sensor_bmx055_accelerometer" id="v9w=unk6Q}IBLjccK2}1">
+                        <field name="VALUE">Total</field>
+                        <field name="RANGE">0x3</field>
+                      </block>
+                    </value>
+                    <value name="Dimension2">
+                      <block type="text" id="+f*3IBD3F89Bb*.S?Lii">
+                        <field name="TEXT">N</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block type="sensebox_display_clearDisplay" id="tB?ddGyR/PVKmGo0a=_|"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="math_number" id="nekq;Iib}/UzjdDh:uwe" disabled="true" x="215" y="325">
+    <field name="NUM">0</field>
+  </block>
+</xml>
