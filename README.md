@@ -5,7 +5,7 @@ Ein Testprogramm für alle Funktionen des SenseBox Edu Kits
 
 | SenseBox Programm | Blockly Code | .ino Code |
 | :---------------: | :----------: | :-------: |
-| [Download](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.bin) | [Download](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.xml) | [](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.ino)
+| [Download testscript.bin](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.bin) | [Download testscript.xml](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.xml) | [Download testscript.ino](https://github.com/GeneralMine/SenseBox-TestScript/raw/main/testscript.ino)
 | Zum direkt auf die SenseBox laden | Selbst weiter programmieren | Weiterprogrammieren für Experten |
 
 ## Ziel
