@@ -93,9 +93,9 @@ Später werden wir die LED im Betrieb einfach rausnehmen und durch eine andere e
 
 ### Vollständiger Aufbau
 So sollte es am Ende aussehen:
-|                          Vollständiger Aufbau                          |
-|:----------------------------------------------------------------------:|
-| [Vollständiger Aufbau](./Bilder/Aufbau/sensebox_sensoren_led_oben.jpg) |
+|                          Vollständiger Aufbau                           |
+|:-----------------------------------------------------------------------:|
+| ![Vollständiger Aufbau](./Bilder/Aufbau/sensebox_sensoren_led_oben.jpg) |
 
 ## Installation
 Nachdem die SenseBox vollständig aufgebaut und mit dem PC verbunden wurde muss das Testprogramm übertragen werden.
@@ -118,9 +118,9 @@ Zur wirklichen Funktionalität müssen Sie aktiv werden und eine manuelle Überp
 ### Display
 Das Display sollte nach einem kurzen Ladebildschirm ein netten Smiley mit der Aufschrift "TestScript" anzeigen. 
 
-|                           Display Startseite                           |
-|:----------------------------------------------------------------------:|
-| [Display-Startseite](./Bilder/Display/sensebox_display_startseite.jpg) |
+|                           Display Startseite                            |
+|:-----------------------------------------------------------------------:|
+| ![Display-Startseite](./Bilder/Display/sensebox_display_startseite.jpg) |
 
 ### Button
 Nach dem Drücken des blauen onBoard Buttons sollte auf dem Display eine andere Seite angezeigt werden.
@@ -154,9 +154,9 @@ Zur Orientierung sind einige Schätzwerte zum Vergleich gegeben. Diese sollten n
     - beim Schütteln: --
 
 #### Alle Sensorseiten
-|                              HDC1080                              |                             BMP280                              |                              VEML-TSL                              |                               Accelerometer                                |
-|:-----------------------------------------------------------------:|:---------------------------------------------------------------:|:------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
-| [HDC1080-Seite](./Bilder/Display/sensebox_display_temperatur.jpg) | [BMP280-Seite](./Bilder/Display/sensebox_display_luftdruck.jpg) | [VEML-TSL-Seite](./Bilder/Display/sensebox_display_helligkeit.jpg) | [Accelerometer-Seite](./Bilder/Display/sensebox_display_accelerometer.jpg) |
+|                              HDC1080                               |                              BMP280                              |                              VEML-TSL                               |                                Accelerometer                                |
+|:------------------------------------------------------------------:|:----------------------------------------------------------------:|:-------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| ![HDC1080-Seite](./Bilder/Display/sensebox_display_temperatur.jpg) | ![BMP280-Seite](./Bilder/Display/sensebox_display_luftdruck.jpg) | ![VEML-TSL-Seite](./Bilder/Display/sensebox_display_helligkeit.jpg) | ![Accelerometer-Seite](./Bilder/Display/sensebox_display_accelerometer.jpg) |
 
 ### LEDs
 Die onBoard LEDs sollten bereits grün leuchten.
