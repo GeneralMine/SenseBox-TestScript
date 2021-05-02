@@ -68,7 +68,7 @@
               </block>
             </value>
             <value name="CASECONDITION0">
-              <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+">
+              <block type="math_number" id="Ixj|}4oy8CMmPEXJ!L+!">
                 <field name="NUM">0</field>
               </block>
             </value>
@@ -316,12 +316,12 @@
                 </statement>
               </block>
             </statement>
-            <value name="CASECONDITION0">
-              <block type="math_number" id="Ixj|}4oy8CMmPEXJ!L+!">
+            <value name="CASECONDITION1">
+              <block type="math_number" id="nekq;Iib}/UzjdDh:uwe">
                 <field name="NUM">1</field>
               </block>
             </value>
-            <statement name="CASE0">
+            <statement name="CASE1">
               <block type="sensebox_display_show" id="v8JTkyl1+KnrnbSUs{?g">
                 <statement name="SHOW">
                   <block type="sensebox_display_fastPrint" id="Lj~=E:/O=zr_j2H@Zyv`">
@@ -384,12 +384,12 @@
                 </statement>
               </block>
             </statement>
-            <value name="CASECONDITION1">
+            <value name="CASECONDITION2">
               <block type="math_number" id="P#T~cNOceNHd|OxATV*b">
                 <field name="NUM">2</field>
               </block>
             </value>
-            <statement name="CASE1">
+            <statement name="CASE2">
               <block type="sensebox_display_show" id="ao}=t]R*S[OAX_Jm%9tS">
                 <statement name="SHOW">
                   <block type="sensebox_display_fastPrint" id="l^Y/vDJIX0][UCe?CAy=">
@@ -429,12 +429,12 @@
                 </statement>
               </block>
             </statement>
-            <value name="CASECONDITION2">
+            <value name="CASECONDITION3">
               <block type="math_number" id="toq;Jz),3AQBrD`)c1YE">
                 <field name="NUM">3</field>
               </block>
             </value>
-            <statement name="CASE2">
+            <statement name="CASE3">
               <block type="sensebox_display_show" id="RHVTrj=jXgbw].V~|}9g">
                 <statement name="SHOW">
                   <block type="sensebox_display_fastPrint" id="G8u[q@ZaOt|#Mkj!,IK4">
@@ -472,12 +472,12 @@
                 </statement>
               </block>
             </statement>
-            <value name="CASECONDITION3">
+            <value name="CASECONDITION4">
               <block type="math_number" id="|Vzp8AETzdRIw+_/ENHu">
                 <field name="NUM">4</field>
               </block>
             </value>
-            <statement name="CASE3">
+            <statement name="CASE4">
               <block type="sensebox_display_show" id="OgKiqsooDwmf;srEU1h)">
                 <statement name="SHOW">
                   <block type="sensebox_display_fastPrint" id="]voWNE}h/Ke6/%J,H!4+">
@@ -525,7 +525,7 @@
       </block>
     </statement>
   </block>
-  <block type="math_number" id="nekq;Iib}/UzjdDh:uwe" disabled="true" x="215" y="325">
+  <block type="math_number" id=":U2ws-oYY1tfsNDTU-C+" disabled="true" x="349" y="365">
     <field name="NUM">0</field>
   </block>
 </xml>
